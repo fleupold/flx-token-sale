@@ -1,0 +1,30 @@
+{
+  "name": "flx-token-sale",
+  "version": "1.0.0",
+  "description": "A sample ethereum token sale",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "canonical-weth": "^1.0.0",
+    "lite-server": "^2.4.0",
+    "openzeppelin-solidity": "^1.10.0",
+    "solidity-coverage": "^0.5.5",
+    "truffle-contract": "^3.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fleupold/flx-token-sale.git"
+  },
+  "author": "Felix Leupold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fleupold/flx-token-sale/issues"
+  },
+  "homepage": "https://github.com/fleupold/flx-token-sale#readme"
+}
