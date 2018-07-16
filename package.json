@@ -17,7 +17,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "truffle test",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "start": "lite-server"
   },
   "repository": {
     "type": "git",
