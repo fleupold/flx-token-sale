@@ -21,7 +21,7 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON('WETH9.json', function(data) {
+    $.getJSON('../WETH9.json', function(data) {
       var Weth9Artifact = data;
       let contract = TruffleContract(Weth9Artifact);
       contract.setProvider(App.web3Provider);
@@ -30,7 +30,7 @@ App = {
         App.contracts.Weth9 = instance
       });
     });
-    $.getJSON('FlxSale.json', function(data) {
+    $.getJSON('../FlxSale.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with truffle-contract
       var FlxSaleArtifact = data;
       let contract = TruffleContract(FlxSaleArtifact);
