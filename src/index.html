@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>FLX Token Sale</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">FLX Token Sale</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+      <div class="alert alert-info">
+        <strong>Info!</strong> This is not a real token sale. It's only available on the Rinkeby test net with worthless test ether.
+      </div>
+      <div class="row">
+          <h3>Instructions</h3>
+          <ol>
+            <li>Download <a href="https://metamask.io/" target="blank">MetaMask</a> for Google Chrome</li>
+            <li>After installing, click on the new fox icon next to the address bar and change from "Main Network" to "Rinkeby Test Network"
+            <li>Get worthless test ether for the Rinkeby network <a target="blank" href="https://faucet.rinkeby.io/">here</a> (you will need to post your MetaMask wallet address using a social media account)</li>
+            <li>Pledge for some FLX token below. Take advantage of the amazing rate of 10 FLX for 1 ETH</li>
+            <li>Click submit in <strong>all 3 MetaMask popups</strong> that show up during the process (it might take some time between popups).</li>
+            <li>Come back after all tokens have been pledged for. The sale will be closed and you can claim the tokens you pledged for (wait for 2 minutes after the sale ended).</li>
+          </ol>
+      </div>
+
+      <div class="row">
+        <h3>Sale Status</h3>
+        <span class="label label-info" id="status"></span>
+      </div>
+      <br/>
+      <div class="row">
+        <span>Remaining FLX Tokens in the sale:</span>
+        <span id="remaining">0</span>
+      </div>
+      <br/>
+      <div class="row">
+        <span>Unclaimed FLX Tokens you pledged for:</span>
+        <span id="pledged">0</span>
+      </div>
+      <br/>
+      <div id="pledge" hidden=true class="row">
+        <h4>Pledge<h4>
+        <div class="row">
+          <div class="slidecontainer col-xs-2">
+            <input type="range" min="10" max="100" value="50" class="slider" id="myRange">
+          </div>
+          <div class="col-xs-2">
+            <p id="slider-value">0</p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-success btn-pledge">Pledge</button>
+      </div>
+      <br/>
+      <div class="row" id="claim" hidden=true>
+        <p>FLX claimed by you:</p>
+        <p id="claimed">0</p>
+        <button type="button" class="btn btn-success btn-claim">Claim</button>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

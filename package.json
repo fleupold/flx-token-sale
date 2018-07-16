@@ -11,11 +11,13 @@
     "lite-server": "^2.4.0",
     "openzeppelin-solidity": "^1.10.0",
     "solidity-coverage": "^0.5.5",
-    "truffle-contract": "^3.0.6"
+    "truffle-contract": "^3.0.6",
+    "truffle-hdwallet-provider": "0.0.5"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "truffle test"
+    "test": "truffle test",
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",

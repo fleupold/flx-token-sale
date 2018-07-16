@@ -55,6 +55,10 @@ contract FlxSale is StandardToken, Ownable {
     wethContract.transfer(owner, wethContract.balanceOf(this));
   }
 
+  function amountPledged(address owner) external view returns (uint) {
+    return pledgers[owner];
+  }
+
   modifier atStage(Stage targetStage) {
     require(stage == targetStage, "Function cannot be called at this time.");
     _;
